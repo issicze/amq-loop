@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Amq-Loop",
+	"version": "1.0",
+
+	"description": "Loop music for specific anime seasons in Anime Music Quiz's expanded library.",
+
+	"icons": {
+		"48": "icons/cycle-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.animemusicquiz.com/*"],
+			"js": ["amq-loop.js"]
+		}
+	]
+}
